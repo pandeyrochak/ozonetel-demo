@@ -1,0 +1,14 @@
+.user-icon{
+    padding: 12px;
+    border: 1px solid #75FB91;
+    border-radius: 50%;
+    background-color: #EAE1CD;
+}
+.notification-icon{
+    margin-right: 35px;
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

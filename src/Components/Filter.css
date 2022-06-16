@@ -1,0 +1,123 @@
+.filter-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  width: 455px;
+  right: 0;
+  background: #ffffff;
+  padding: 20px;
+  z-index: 2;
+}
+.close-button{
+    cursor: pointer;
+}
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.filter-header .left-title{
+    font-weight: 600;
+}
+
+.button-row {
+  margin-top: 29px;
+  margin-bottom: 19px;
+}
+.button-row button.link-btn {
+  padding: 0;
+  margin-right: 22px;
+}
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.option {
+  flex-grow: 1;
+  min-width: 50%;
+  margin-bottom: 12px;
+}
+
+.apply-filter-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apply-filter-btn-wrapper button.apply-filter {
+  width: 100%;
+  background: #3d8bf8;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  padding: 7px;
+  margin-bottom: 14px;
+}
+.apply-filter-btn-wrapper .tip-text {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #99a0a8;
+}
+.tip-text::before {
+  position: absolute;
+  content: url("../assets/i-icon.png");
+  left: -18px;
+}
+
+.search-row {
+  display: flex;
+  width: 100%;
+}
+.search-row{
+    border: 1px solid #99A0A8;
+    /* padding: 8px 10px; */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.search-row .skill-select,
+.search-row .search-input input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #212121;
+  border: unset;
+  padding: 8px 10px;
+}
+.search-row .skill-select:focus{
+    outline: none;
+}
+.search-row .skill-dropdown{
+    border-right: 1px solid #99a0a8;
+}
+.search-row .skill-select {
+  border-radius: 8px 0px 0px 8px;
+}
+.search-row .skill-select option{
+    padding: 8px 10px;
+}
+.search-input{
+    position: relative;
+    flex-grow: 1;
+}
+.search-row .search-input input:focus{
+    outline: none;
+}
+.search-row .search-input input {
+  border-radius: 0px 8px 8px 0px;
+  width: 90%;
+}
+.search-row .search-input::after{
+    position: absolute;
+    content: url("../assets/search-icon.png");
+    right: 15px ;
+    top: 7px;
+}

@@ -1,0 +1,6 @@
+.sidebar .active {
+  background: #e3ecfd;
+  border-radius: 8px;
+  color: #3d8bf8;
+  font-weight: 600;
+}
