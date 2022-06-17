@@ -61,7 +61,7 @@
 }
 .widget-header-right .download-button::after {
   position: absolute;
-  content: url("../assets/arrow-down.png");
+  content: url("../assets/arrow-down.svg");
   right: -9px;
   top: -7px;
 }

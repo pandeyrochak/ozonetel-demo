@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Filter.css";
+import closeIcon from "../assets/close-btn.svg";
 
 const Filter = (props) => {
   let filterOptions = [
@@ -117,7 +118,7 @@ const Filter = (props) => {
         <div className="filter-header">
           <div className="h4 left-title">Filter</div>
           <div className="close-button" onClick={props.onClickHandler}>
-            <img src={require("../assets/close-btn.png")} alt="close" />
+            <img src={closeIcon} alt="close" />
           </div>
         </div>
         <div className="search-row">

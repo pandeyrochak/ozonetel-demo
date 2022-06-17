@@ -1,32 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 import SidebarItem from "./SidebarItem";
-// import "./Sidebar.css"
+import dashboardIcon from "../assets/dashboard-icon.svg";
+import reportsIcon from "../assets/reports-icon.svg";
+import campaignIcon from "../assets/campaign-icon.svg";
+import adminIcon from "../assets/admin-icon.svg";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const menuOptions = [
     {
       id: 1,
       text: "Dashboard",
-      imageUrl: require("../assets/dashboard-icon.png"),
+      imageUrl: dashboardIcon,
       isActive:false
     },
     {
       id: 2,
       text: "Reports",
-      imageUrl: require("../assets/reports-icon.png"),
+      imageUrl: reportsIcon,
       isActive:true
     },
     {
       id: 3,
       text: "Campaings",
-      imageUrl: require("../assets/campaigns-icon.png"),
+      imageUrl: campaignIcon,
       isActive:false
     },
     {
       id: 4,
       text: "Admins",
-      imageUrl: require("../assets/admin-icon.png"),
+      imageUrl: adminIcon,
       isActive:false
     },
   ];

@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import filterIcon from "../assets/filter-icon.svg";
+import downloadIcon from "../assets/download-icon.svg";
+import asPdfIcon from "../assets/as-pdf-icon.svg";
+import asJpgIcon from "../assets/as-jpg-icon.svg";
 
 import "./Widget.css";
 
@@ -19,11 +23,11 @@ const Widget = (props) => {
         style={{ display: downloadOptionsVisibility ? "block" : "none" }}
       >
         <div className="as-pdf">
-          <img src={require("../assets/as-pdf.png")} alt="" />
+          <img src={asPdfIcon} alt="" />
           <div className="h6">as PDF</div>
         </div>
         <div className="as-jpg">
-          <img src={require("../assets/as-jpg.png")} alt="" />
+          <img src={asJpgIcon} alt="" />
           <div className="h6">as PDF</div>
         </div>
       </div>
@@ -34,10 +38,10 @@ const Widget = (props) => {
         </div>
         <div className="widget-header-right">
           <div className="download-button" onClick={handleDownloadClick}>
-            <img src={require("../assets/download-icon.png")} alt="Download" />
+            <img src={downloadIcon} alt="Download" />
           </div>
           <div className="filter-button" onClick={props.onClickHandler}>
-            <img src={require("../assets/filter-icon.png")} alt="Filter" />
+            <img src={filterIcon} alt="Filter" />
           </div>
         </div>
       </div>

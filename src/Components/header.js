@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import "./Header.css";
+import notificationIcon from "../assets/notification-icon.svg";
+import ozonetelLogo from "../assets/ozonetel-logo.svg"; 
 
 const Header = () => {
   return (
     <HeaderWrapper>
       <div className="ozonetel-logo">
-        <img src={require("../assets/ozonetel-logo.png")} alt="ozonetel-logo" />
+        <img src={ozonetelLogo} alt="ozonetel-logo" />
       </div>
       <div className="header-right">
         <div className="notification-icon">
           <img
-            src={require("../assets/notification-icon.png")}
+            src={notificationIcon}
             alt="notification-icon"
           />
         </div>

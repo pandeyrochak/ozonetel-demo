@@ -1,6 +1,8 @@
 .sidebar .active {
   background: #e3ecfd;
   border-radius: 8px;
-  color: #3d8bf8;
+}
+.sidebar .active .h6{
+  color: #3D8BF8;
   font-weight: 600;
 }
