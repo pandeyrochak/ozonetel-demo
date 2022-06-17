@@ -75,6 +75,7 @@
   padding: 8px;
   background: #f5f8fa;
   border: 1px solid #dbe1e6;
+  cursor: pointer;
 }
 .widget-tab-row .widget-tab.active {
   color: #008eff;

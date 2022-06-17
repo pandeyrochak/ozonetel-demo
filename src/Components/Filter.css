@@ -55,6 +55,7 @@
   border: none;
   padding: 7px;
   margin-bottom: 14px;
+  cursor: pointer;
 }
 .apply-filter-btn-wrapper .tip-text {
   position: relative;
