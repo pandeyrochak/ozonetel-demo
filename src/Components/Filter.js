@@ -84,15 +84,28 @@ const Filter = (props) => {
       option: "Iran Tec",
     },
   ];
+
   const [checked, setChecked] = useState(
     new Array(filterOptions.length).fill(false)
   );
 
+  const handleCheckBox = (position) => {
+    const updatedStates = checked.map((item, index) => {
+      return (index === position ? !item : item)
+    });
+    setChecked(updatedStates);
+  };
   const handleCheckAll = () => {
-    setChecked(true);
+    const updatedStates = checked.map((item) => {
+      return true;
+    });
+    setChecked(updatedStates);
   };
   const handleClearAll = () => {
-    setChecked(false);
+    const updatedStates = checked.map((item) => {
+      return false;
+    });
+    setChecked(updatedStates);
   };
 
   return (
@@ -136,15 +149,15 @@ const Filter = (props) => {
           </button>
         </div>
         <div className="options-container">
-          {filterOptions.map((item) => {
+          {filterOptions.map((item, index) => {
             return (
-              <div className="option" key={item.id}>
+              <div className="option" key={index}>
                 <label>
                   <input
                     type="checkbox"
                     name=""
-                    checked={checked}
-                    onChange={(e) => setChecked(e.target.checked)}
+                    checked={checked[index]}
+                    onChange={() => handleCheckBox(index)}
                   />
                   <span style={{ marginLeft: 8 }}>{item.option}</span>
                 </label>
