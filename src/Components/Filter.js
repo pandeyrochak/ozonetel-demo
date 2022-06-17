@@ -160,7 +160,7 @@ const Filter = (props) => {
                     checked={checked[index]}
                     onChange={() => handleCheckBox(index)}
                   />
-                  <span style={{ marginLeft: 8 }}>{item.option}</span>
+                  <span className="h5" style={{ marginLeft: 8 }}>{item.option}</span>
                 </label>
               </div>
             );

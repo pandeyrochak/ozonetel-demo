@@ -7,6 +7,12 @@ body {
   font-weight: 400;
   color: #212121;
 }
+.h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
 .h2 {
   font-style: normal;
   font-size: 22px;
@@ -33,4 +39,6 @@ button.link-btn {
   border: none;
   color: #3d8bf8;
   cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
 }

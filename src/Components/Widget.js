@@ -46,12 +46,12 @@ const Widget = (props) => {
         </div>
       </div>
       <div className="widget-tab-row">
-        <div className="widget-tab active">All</div>
-        <div className="widget-tab">Voice</div>
-        <div className="widget-tab">Manual</div>
-        <div className="widget-tab">Preview</div>
-        <div className="widget-tab">Progressive</div>
-        <div className="widget-tab">Blended</div>
+        <div className="h6 widget-tab active">All</div>
+        <div className="h6 widget-tab">Voice</div>
+        <div className="h6 widget-tab">Manual</div>
+        <div className="h6 widget-tab">Preview</div>
+        <div className="h6 widget-tab">Progressive</div>
+        <div className="h6 widget-tab">Blended</div>
       </div>
       <div className="widget-restore-filter-button">
         <button className="link-btn">Restore Filter</button>
@@ -121,9 +121,9 @@ const Widget = (props) => {
               <div className="h6 summary-title">Active Calls</div>
             </div>
             <div className="summary-column">
+              <div className="h5 summary-text">66</div>
               <div className="h5 summary-text">30</div>
-              <div className="h5 summary-text">30</div>
-              <div className="h5 summary-text">30</div>
+              <div className="h5 summary-text">25</div>
             </div>
           </div>
         </div>
